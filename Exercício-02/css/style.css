@@ -27,5 +27,12 @@ body {
 }
 
 .invisivel {
-    display: none;
+    opacity: 0;
+}
+
+
+.visivel {
+
+    opacity: 1;
+
 }
