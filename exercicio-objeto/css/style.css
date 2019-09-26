@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(236, 221, 243);
+    font-family: 'Nunito', sans-serif;
+}
+
+.nome {
+    font-size: 150px;
+    text-align: center;
+    color: violet;
+}
+
+.profissao {
+    font-size: 100px;
+    text-align: center;
+}
+
+.idade {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}
+
+.hobbie {
+    font-size: 50px;
+    text-align: center;
+}
+.cantoraFavorita {
+    border: 100px;
+    margin-top: 150px;
+    font-size: 50px;
+    text-align: center;
+}
+.fotoSia {
+    margin-top: 50px;
+    align-content: center;
+}
+
+.fraseDoDia {
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+.meuSite {
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+.objetoFinal {
+    font-size: 100px;
+    text-align: center;
+    color:palevioletred;
+}
+.objetoText {
+    font-size: 100px;
+    text-align: center;
+    color: blue;
+}
+
+.objeto3 {
+    
+}
+
