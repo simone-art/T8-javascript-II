@@ -45,24 +45,47 @@ const livrosCatalogo = document.getElementById ("lista-do-catalogo")
     
 
     let botones = document.createElement ("button");
-    botones.textContent = "Já li";
+    botones.textContent = "Marcar como lido";
     livrosCatalogo.appendChild (botones);
     botones.classList.add ("botao-lido");
 
+
     botones.addEventListener ("click", function () {
-        livro.classList.add ("livro__titulo--lido")
-    })
-
-    let botonNoLei = document.createElement ("button");
-    botonNoLei.textContent = "Nao li";
-    livrosCatalogo.appendChild (botonNoLei);
-    botonNoLei.classList.add ("botao-desfazer");
-
-    botonNoLei.addEventListener ("click", function () {
-        livro.classList.remove ("livro__titulo--lido")
-    })
-
+        if (livro.classList.contains ("livro__titulo--lido") ) {
+            livro.classList.remove ("ivro__titulo--lido");
+            botones.textContent = "Marcar como lido";
+            botones.classList.remove ("botao-vermelho");  
+        } else {
+        livro.classList.contains ("livro__titulo--lido") 
+        botones.textContent = "Marcar como nao lido";
+        botones.classList.add ("botao-vermelho");  
+        };
+    });
 }
+
+    // botones.addEventListener ("click", function () {
+    //     if (livro.classList.contains ("livro__titulo--lido") ) {
+    //         livro.classList.remove ("livro__titulo--lido");
+    //     } else {
+    //         livro.classList.add ("livro__titulo--lido");
+    //     };
+       
+    // });
+
+    // botones.addEventListener ("click", function () {
+    //     livro.classList.add ("livro__titulo--lido")
+    // })
+
+    // let botonNoLei = document.createElement ("button");
+    // botonNoLei.textContent = "Nao li";
+    // livrosCatalogo.appendChild (botonNoLei);
+    // botonNoLei.classList.add ("botao-desfazer");
+
+    // botonNoLei.addEventListener ("click", function () {
+    //     livro.classList.remove ("livro__titulo--lido")
+    // })
+
+
 
 // NO ES NECESARIO DEFINIR UNA VARIABLE POR CADA LIBRO. 
 //PARA ESO, USAS EL FOR LET PROPIEDADE IN OBJETO PARA 
@@ -120,17 +143,3 @@ const livrosCatalogo = document.getElementById ("lista-do-catalogo")
 // meuSite.setAttribute = ("href", objeto.meuSite);
 // meuSite.getAttribute = ("target", "_blank");
 // descricaoFinal.appendChild (meuSite);
-
-
-
-
-
-
-// const objeto = {
-//     nome: "Simone",
-//     profissao: "Desenvolvedora",
-//     idade: 42,
-//     hobbie: ["nataçao", "ler", "correr"],
-//     cantoraFavorita: "Sia",
-//     fraseDoDia: "vai dar certo"
-// }
